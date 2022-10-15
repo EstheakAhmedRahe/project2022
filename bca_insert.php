@@ -19,32 +19,26 @@ $email_patt="/[a-z _]{1}[a-z 0-9 _]{3,20}@(gmail|yahoo|outlook){1}\.com/";
 if(mysqli_num_rows(
   $duplicate_mobile)){
     echo"<script>alert('Mobilee Already taken!!')</script>";
-
+    echo"<script>location.href='bca_registration.php'</script>";
   }
 
-  else if(mysqli_num_rows(
-    $duplicate_mobile)){
-      echo"<script>alert('Mobilee Already taken!!')</script>";
-  
-    }
     else if(mysqli_num_rows(
       $duplicate_email)){
         echo"<script>alert('Email Already taken!!')</script>";
-    
+        echo"<script>location.href='bca_registration.php'</script>";
       }
 
 else if(!preg_match($mobile_patt,$mobile)){
 
   echo"<script>alert('Mobile invalid!!')</script>";
-  
-  echo"<script>location.href='regi.php'</script>";
+  echo"<script>location.href='bca_registration.php'</script>";
 }
 
 else if(!preg_match($email_patt,$email)){
 
   echo"<script>alert('email invalid!!')</script>";
   
-  echo"<script>location.href='regi.php'</script>";
+  echo"<script>location.href='bca_registration.php'</script>";
 }
 
  else{

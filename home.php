@@ -265,7 +265,7 @@
   </main>
   <hr>
   <br>
-  <footer >
+  <footer>
     <div class="row">
       <div class="col-lg-6 col-sm-12 col-md-12 text-white m-auto">
      <form class="cmt" method="POST" action="send.php">     
